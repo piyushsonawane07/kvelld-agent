@@ -20,7 +20,7 @@ llm=init_chat_model("groq:openai/gpt-oss-120b")
 
 
 # Tools 
-tools = [addition, subtraction, multiply, division, human_assistance]
+tools = [addition, subtraction, multiply, division, power, human_assistance]
 
 #Bind tools to LLM
 llm_with_tools = llm.bind_tools(tools)
